@@ -46,11 +46,8 @@ var targetDependencies: [Target.Dependency] = [ "Kitura", "CloudEnvironment","Sw
 // IBMCloudAppID requires OpenSSL that is not included on Mac by default.
 // We only include the appid example on Linux to ensure Kitura-Sample works
 // out-of-the-box on macOS.
-//
-// TODO: stop using master branch once Swift 5.1 support has been tagged.
-//
 #if os(Linux)
-dependencies.append(.package(url: "https://github.com/ibm-cloud-security/appid-serversdk-swift", .branch("master")))
+dependencies.append(.package(url: "https://github.com/ibm-cloud-security/appid-serversdk-swift", from: "6.0.0"))
 targetDependencies.append("IBMCloudAppID")
 #endif
 

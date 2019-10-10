@@ -47,7 +47,7 @@ var targetDependencies: [Target.Dependency] = [ "Kitura", "CloudEnvironment","Sw
 // We only include the appid example on Linux to ensure Kitura-Sample works
 // out-of-the-box on macOS.
 #if os(Linux) && swift(>=4.2)
-dependencies.append(.package(url: "https://github.com/ibm-cloud-security/appid-serversdk-swift", from: "5.1.0"))
+dependencies.append(.package(url: "https://github.com/ibm-cloud-security/appid-serversdk-swift", from: "6.0.0"))
 targetDependencies.append("IBMCloudAppID")
 #endif
 
