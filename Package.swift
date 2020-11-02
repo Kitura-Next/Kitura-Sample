@@ -24,7 +24,7 @@ var dependencies: [Package.Dependency] = [
     .package(url: "https://github.com/Kitura-Next/Kitura.git", from: "2.6.0"),
     .package(url: "https://github.com/Kitura-Next/HeliumLogger.git", from: "1.7.1"),
     .package(url: "https://github.com/Kitura-Next/CloudEnvironment.git", from: "9.0.0"),
-    .package(url: "https://github.com/RuntimeTools/SwiftMetrics.git", from: "2.5.0"),
+    .package(url: "https://github.com/Kitura-Next/SwiftMetrics.git", from: "2.5.0"),
     .package(url: "https://github.com/Kitura-Next/Health.git", from: "1.0.0"),
     .package(url: "https://github.com/Kitura-Next/Kitura-OpenAPI.git", from: "1.1.0"),
     .package(url: "https://github.com/Kitura-Next/Kitura-StencilTemplateEngine.git", from: "1.9.0"),
@@ -34,7 +34,7 @@ var dependencies: [Package.Dependency] = [
     .package(url: "https://github.com/Kitura-Next/Kitura-CredentialsGoogle.git", from: "2.2.0"),
     .package(url: "https://github.com/Kitura-Next/Kitura-CredentialsFacebook.git", from: "2.2.0"),
     .package(url: "https://github.com/Kitura-Next/Swift-JWT", from: "3.0.0"),
-    .package(url: "https://github.com/Kitura-Next/Swift-Kuery-ORM.git", .upToNextMinor(from: "0.5.0")),
+    .package(url: "https://github.com/Kitura-Next/Swift-Kuery-ORM.git", from: "0.5.0"),
 ]
 var targetDependencies: [Target.Dependency] = [ "Kitura", "CloudEnvironment","SwiftMetrics","Health", "KituraOpenAPI", "KituraMarkdown", "KituraStencil", "CredentialsHTTP", "KituraSession", "CredentialsGoogle", "CredentialsFacebook", "SwiftJWT", "SwiftKueryORM",
 ]
