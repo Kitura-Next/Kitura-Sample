@@ -34,7 +34,7 @@ func initializeFurtherRoutes(app: App) {
     
     // Redirection example
     app.router.get("/redirect") { _, response, next in
-        try response.redirect("https://www.kitura.io")
+        try response.redirect("https://www.kituranext.org")
         next()
     }
 

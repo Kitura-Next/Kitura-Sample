@@ -21,26 +21,26 @@ import PackageDescription
 import Foundation
 
 var dependencies: [Package.Dependency] = [
-    .package(url: "https://github.com/IBM-Swift/Kitura.git", from: "2.6.0"),
-    .package(url: "https://github.com/IBM-Swift/HeliumLogger.git", from: "1.7.1"),
-    .package(url: "https://github.com/IBM-Swift/CloudEnvironment.git", from: "9.0.0"),
+    .package(url: "https://github.com/Kitura-Next/Kitura.git", from: "2.6.0"),
+    .package(url: "https://github.com/Kitura-Next/HeliumLogger.git", from: "1.7.1"),
+    .package(url: "https://github.com/Kitura-Next/CloudEnvironment.git", from: "9.0.0"),
     .package(url: "https://github.com/RuntimeTools/SwiftMetrics.git", from: "2.5.0"),
-    .package(url: "https://github.com/IBM-Swift/Health.git", from: "1.0.0"),
-    .package(url: "https://github.com/IBM-Swift/Kitura-OpenAPI.git", from: "1.1.0"),
-    .package(url: "https://github.com/IBM-Swift/Kitura-StencilTemplateEngine.git", from: "1.9.0"),
-    .package(url: "https://github.com/IBM-Swift/Kitura-Markdown.git", from: "1.0.0"),
-    .package(url: "https://github.com/IBM-Swift/Kitura-CredentialsHTTP.git", from: "2.1.0"),
-    .package(url: "https://github.com/IBM-Swift/Kitura-Session.git", from: "3.3.0"),
-    .package(url: "https://github.com/IBM-Swift/Kitura-CredentialsGoogle.git", from: "2.2.0"),
-    .package(url: "https://github.com/IBM-Swift/Kitura-CredentialsFacebook.git", from: "2.2.0"),
-    .package(url: "https://github.com/IBM-Swift/Swift-JWT", from: "3.0.0"),
-    .package(url: "https://github.com/IBM-Swift/Swift-Kuery-ORM.git", .upToNextMinor(from: "0.5.0")),
+    .package(url: "https://github.com/Kitura-Next/Health.git", from: "1.0.0"),
+    .package(url: "https://github.com/Kitura-Next/Kitura-OpenAPI.git", from: "1.1.0"),
+    .package(url: "https://github.com/Kitura-Next/Kitura-StencilTemplateEngine.git", from: "1.9.0"),
+    .package(url: "https://github.com/Kitura-Next/Kitura-Markdown.git", from: "1.0.0"),
+    .package(url: "https://github.com/Kitura-Next/Kitura-CredentialsHTTP.git", from: "2.1.0"),
+    .package(url: "https://github.com/Kitura-Next/Kitura-Session.git", from: "3.3.0"),
+    .package(url: "https://github.com/Kitura-Next/Kitura-CredentialsGoogle.git", from: "2.2.0"),
+    .package(url: "https://github.com/Kitura-Next/Kitura-CredentialsFacebook.git", from: "2.2.0"),
+    .package(url: "https://github.com/Kitura-Next/Swift-JWT", from: "3.0.0"),
+    .package(url: "https://github.com/Kitura-Next/Swift-Kuery-ORM.git", .upToNextMinor(from: "0.5.0")),
 ]
 var targetDependencies: [Target.Dependency] = [ "Kitura", "CloudEnvironment","SwiftMetrics","Health", "KituraOpenAPI", "KituraMarkdown", "KituraStencil", "CredentialsHTTP", "KituraSession", "CredentialsGoogle", "CredentialsFacebook", "SwiftJWT", "SwiftKueryORM",
 ]
 
 // Uncomment to use PostgreSQL
-// dependencies.append(.package(url: "https://github.com/IBM-Swift/Swift-Kuery-PostgreSQL.git", from: "1.2.0"))
+// dependencies.append(.package(url: "https://github.com/Kitura-Next/Swift-Kuery-PostgreSQL.git", from: "1.2.0"))
 // targetDependencies.append("SwiftKueryPostgreSQL")
 
 // IBMCloudAppID requires OpenSSL that is not included on Mac by default.
@@ -51,9 +51,9 @@ targetDependencies.append("IBMCloudAppID")
 
 // Use alternate implementation of Kitura-WebSocket while building in NIO mode
 if ProcessInfo.processInfo.environment["KITURA_NIO"] != nil {
-    dependencies.append(.package(url:  "https://github.com/IBM-Swift/Kitura-WebSocket-NIO.git", from: "2.0.0"))
+    dependencies.append(.package(url:  "https://github.com/Kitura-Next/Kitura-WebSocket-NIO.git", from: "2.0.0"))
 } else {
-    dependencies.append(.package(url: "https://github.com/IBM-Swift/Kitura-WebSocket.git", from: "2.0.0"))
+    dependencies.append(.package(url: "https://github.com/Kitura-Next/Kitura-WebSocket.git", from: "2.0.0"))
 }
 
 let package = Package(
