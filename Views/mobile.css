@@ -22,7 +22,7 @@ html {
 
 body {
     margin: 0px;
-    padding: 0
+    padding: 0;
 }
 
 .header {
@@ -112,7 +112,6 @@ body {
 
 .mainPane img {
     display: none;
-    
 }
 
 #innerPage {
